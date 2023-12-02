@@ -17,7 +17,7 @@ const Dashboard = () => {
     try {
       dispatch(setLoading());
       const userDataResponse = await axios.get(
-        "https://6557461abd4bcef8b6125cf6.mockapi.io/users"
+        "https://6557461abd4bcef8b6125cf6.mockapi.io/practice"
       );
       dispatch(setBook(userDataResponse.data));
     } catch (error) {

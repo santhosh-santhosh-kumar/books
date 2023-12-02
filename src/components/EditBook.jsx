@@ -61,7 +61,7 @@ const EditBook = () => {
             try {
                 dispatch(setLoading());
                 const response = await axios.put(
-                  `https://6557461abd4bcef8b6125cf6.mockapi.io/users/${params.id}`,
+                  `https://6557461abd4bcef8b6125cf6.mockapi.io/practice/${params.id}`,
                   values
                 );
                 dispatch(setBook(response.data));  
@@ -80,7 +80,7 @@ const EditBook = () => {
         const getData = async () => {
             try {
                 const userData = await axios.get(
-                    `https://6557461abd4bcef8b6125cf6.mockapi.io/users/${params.id}`
+                    `https://6557461abd4bcef8b6125cf6.mockapi.io/practice/${params.id}`
                 );
                 dispatch(editBook(userData.data))
        

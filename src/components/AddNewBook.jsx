@@ -63,7 +63,7 @@ const AddNewBook = () => {
     onSubmit: async (values) => {
       try {
         const response = await axios.post(
-          "https://6557461abd4bcef8b6125cf6.mockapi.io/users",
+          "https://6557461abd4bcef8b6125cf6.mockapi.io/practice",
           values
         );
         dispatch(createBook(response.data));

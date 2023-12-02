@@ -11,7 +11,7 @@ const Table = ({ bookData }) => {
 
   const handleDelete = async (bookId, title) => {
     try {
-      await axios.delete(`https://6557461abd4bcef8b6125cf6.mockapi.io/users/${bookId}`);
+      await axios.delete(`https://6557461abd4bcef8b6125cf6.mockapi.io/practice/${bookId}`);
       closeAfter15(title);
       dispatch(deleteBook(bookId));
     } catch (error) {

@@ -14,7 +14,7 @@ const ViewBook = () => {
         const getData = async () => {
             try {
                 dispatch(setLoading())
-                const employee = await axios.get(`https://6557461abd4bcef8b6125cf6.mockapi.io/users/${params.id}`)
+                const employee = await axios.get(`https://6557461abd4bcef8b6125cf6.mockapi.io/practice/${params.id}`)
                 dispatch(setBook(employee.data))
             } catch (error) {
                 console.log(error)
